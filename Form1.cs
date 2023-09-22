@@ -4,6 +4,7 @@ namespace ListaSimpleCS
 {
     public partial class Form1 : Form
     {
+        //Comentario para cambio
         ListaSimple Lindek_List;
         public Form1()
         {
