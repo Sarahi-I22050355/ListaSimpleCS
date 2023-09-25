@@ -31,9 +31,9 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
             this.txtNombre = new System.Windows.Forms.TextBox();
-            this.listLista = new System.Windows.Forms.ListBox();
             this.btnCreate = new System.Windows.Forms.Button();
             this.txtNumNodos = new System.Windows.Forms.TextBox();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // btnAdd
@@ -66,17 +66,6 @@
             this.txtNombre.Size = new System.Drawing.Size(394, 27);
             this.txtNombre.TabIndex = 4;
             // 
-            // listLista
-            // 
-            this.listLista.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.listLista.FormattingEnabled = true;
-            this.listLista.ItemHeight = 21;
-            this.listLista.Location = new System.Drawing.Point(9, 55);
-            this.listLista.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.listLista.Name = "listLista";
-            this.listLista.Size = new System.Drawing.Size(394, 256);
-            this.listLista.TabIndex = 5;
-            // 
             // btnCreate
             // 
             this.btnCreate.Location = new System.Drawing.Point(410, 327);
@@ -96,14 +85,22 @@
             this.txtNumNodos.Size = new System.Drawing.Size(114, 27);
             this.txtNumNodos.TabIndex = 6;
             // 
+            // listView1
+            // 
+            this.listView1.Location = new System.Drawing.Point(12, 93);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(395, 212);
+            this.listView1.TabIndex = 8;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(510, 375);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.txtNumNodos);
-            this.Controls.Add(this.listLista);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnAdd);
@@ -119,8 +116,8 @@
         private Button btnAdd;
         private Button btnRemove;
         private TextBox txtNombre;
-        private ListBox listLista;
         private Button btnCreate;
         private TextBox txtNumNodos;
+        private ListView listView1;
     }
 }
